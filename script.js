@@ -1,12 +1,12 @@
 
 let message=document.getElementById("messageEle")
 
-let card1=10
-let card2=1
+let card1=Math.floor(Math.random()*11)
+let card2=Math.floor(Math.random()*11)
 let sum=card1+card2
 
 function drawCard(){
-    let cardX=5
+    let cardX=Math.floor(Math.random()*11)
     sum+=cardX
     cards+="-"+cardX
     document.getElementById("sum").textContent=sum
